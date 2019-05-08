@@ -1,0 +1,253 @@
+header {
+  width: 100vw;
+}
+main {
+  min-height: 100vh;
+  margin: 0 88px;
+  color: white;
+}
+
+.projects-content {
+  height: 95vh;
+}
+
+.projects-content>p {
+  max-width: 625px;
+  font-size: 1.4rem;
+  line-height: 1.65;
+  opacity: 0.8;
+}
+
+.projects-content h1 {
+  font-family: Raleway-Black;
+  letter-spacing: 8px;
+  font-size: 6rem;
+  padding: 160px 0 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.projects-content h1::first-letter {
+  font-size: 7rem;
+}
+
+.projects-container {
+  margin-bottom: 160px;
+}
+
+.project-wrapper {
+  border: 2px solid white;
+  border-radius: 32px;
+  margin-bottom: 160px;
+}
+
+.project-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-heading h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Raleway-Bold';
+  transform: translateY(-72px);
+  background-color: var(--black);
+  min-width: 15vw;
+}
+
+.project-info--left, .project-info--right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 112px;
+}
+
+.project-info--left img, .project-info--right img {
+  width: 500px;
+  height: auto;
+  background-color: grey;
+}
+
+.project-info--left img {
+  transform: translateX(-24px);
+}
+
+.project-info--right img {
+  transform: translateX(24px);
+}
+
+.project-image-wrapper {
+  position: relative;
+}
+
+.project-image-wrapper::before {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1.3);
+}
+
+.project-info--left p, .project-info--right p {
+  margin: 0 72px;
+  line-height: 1.65;
+  font-size: 1.2rem;
+  max-width: 500px;
+}
+
+.project-info--left h3, .project-info--right h3 {
+  margin: 0px 72px 16px;
+  font-family: 'Raleway-Bold';
+  text-transform: uppercase;
+}
+
+.project-info--left ul, .project-info--right ul {
+  margin: auto 72px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  max-width: 500px;
+  list-style-type: square;
+}
+
+.project-buildings-wrapper {
+  width: 80vh;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(270deg) translateX(30%);
+  transform-origin: right bottom;
+}
+
+.menu-button {
+  border: 4px solid var(--black);
+  width: 60px;
+  height: 60px;
+}
+
+.social-links a {
+  border: 4px solid var(--black);
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    width: 100vw;
+  }
+  .project-info--left {
+    flex-direction: column;
+  }
+
+  .project-info--right {
+    flex-direction: column-reverse;
+  }
+
+  main {
+    margin: 0 16px;
+  }
+
+  .project-info--left p, .project-info--right p {
+    margin: 56px 40px 0;
+  }
+
+  .project-info--left ul, .project-info--right ul {
+    margin: 16px 40px 0;
+    display: block;
+    padding: 0;
+  }
+
+  .project-info--left h3, .project-info--right h3 {
+    margin: 56px 40px 0;
+    text-align: center;
+  }
+
+  .project-info--left img, .project-info--right img {
+    transform: translateX(0);
+    width: 100%;
+    height: auto;
+  }
+
+  .project-image-wrapper {
+    width: calc(100% - 64px);
+  }
+
+  .project-image-wrapper::before {
+    display: none;
+  }
+
+  .project-heading h2 {
+    transform: translateY(-44px);
+    min-width: 35vw;
+  }
+
+  .project-buildings-wrapper {
+    transform: rotate(180deg) translateY(-80px);
+    transform-origin: center;
+  }
+
+  .projects-content h1 {
+    padding-top: 320px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .project-info--left img, .project-info--right img {
+    transform: translateX(0);
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+* {
+  box-sizing: border-box
+}
+
+.mySlides1, .mySlides2 {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  top: -60px;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  color: black;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgb(72, 74, 76);
+  color: black;
+}

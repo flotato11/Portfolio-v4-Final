@@ -1,0 +1,208 @@
+.landing-section {
+  height: 100vh;
+}
+
+.landing-text {
+  position: fixed;
+  left: 8vw;
+  top: 216px;
+}
+
+.landing-text h1 {
+  font-family: Catamaran-Black;
+  color: var(--black);
+  font-size: 4.5rem;
+  position: relative;
+  margin: 0;
+}
+
+.landing-text h1:after {
+  content: "ALEX YAN";
+  color: white;
+  position: absolute;
+  left: -4px;
+  bottom: -4px;
+  z-index: -1;
+}
+
+.landing-text h2 {
+  color: var(--black);
+  font-family: Raleway-Bold;
+  margin: 0;
+  transform: translateY(-24px);
+}
+
+.background-shape {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.background-shape path:not(.cls-2):not(.cls-1) {
+  fill: black;
+}
+
+.background-shape .cls-1 {
+  fill: #FBE791;
+}
+
+.background-shape svg {
+  height: 100%;
+  fill: #FBE791;
+}
+
+.resume-section {
+  position: relative;
+  background-color: var(--black);
+  width: 100vw;
+  padding-bottom: 88px;
+}
+
+.buildings-wrapper {
+  width: 100vw;
+  max-width: 1200px;
+  position: absolute;
+  right: 0;
+  bottom: calc(100% - 16px);
+  z-index: 2;
+}
+
+.buildings-wrapper svg {
+  stroke: white;
+  stroke-width: 3;
+}
+
+.buildings-shadow-wrapper {
+  transform: rotateX(180deg);
+  width: 100vw;
+  max-width: 1200px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.resume-name-shadow {
+  color: white;
+  opacity: 0.3;
+  font-family: Catamaran-Black;
+  font-size: 8rem;
+}
+
+.resume-content {
+  margin: 0 88px;
+  color: white;
+}
+
+.resume-content h2 {
+  color: white;
+  font-family: Raleway-Black;
+  letter-spacing: 8px;
+  font-size: 6rem;
+  padding: 160px 0 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+p.resume-description {
+  max-width: 675px;
+  font-size: 1.4rem;
+  line-height: 1.65;
+  opacity: 0.8;
+}
+
+.resume-content h2::first-letter {
+  font-size: 7rem;
+}
+
+.resume-category {
+  margin: 175px 0 0;
+}
+
+.resume-subcategory {
+  margin-top: 100px;
+}
+
+.resume-category h3 {
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: Raleway-Light;
+  border-bottom: 2px #355FBF solid;
+  padding-bottom: 4px;
+}
+
+.resume-subcategory h4 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  font-family: Catamaran-Bold;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.resume-subcategory h5 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-size: 1.7rem;
+  transform: translate(2px, -15px);
+  color: #355FBF;
+}
+
+.resume-subcategory h6 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  transform: translate(2px, -25px);
+  color: white;
+}
+
+.resume-subcategory p {
+  max-width: 600px;
+  line-height: 1.65;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.resume-subcategory ul {
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .resume-content {
+    margin: 0 40px;
+  }
+
+  .resume-subcategory h5 {
+    transform: translate(1px, -10px);
+  }
+
+  p {
+    line-height: 1.85;
+  }
+
+  .social-links a {
+    width: 22px;
+    height: 22px;
+  }
+
+  .menu-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .floodlight {
+    transform: translateX(-60px);
+  }
+
+  .resume-content h2 {
+    padding-top: 200px;
+    text-align: center;
+  }
+
+  p.resume-description {
+    text-align: center;
+  }
+}

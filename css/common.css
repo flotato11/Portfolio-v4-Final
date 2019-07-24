@@ -47,12 +47,34 @@
   font-size: 16px;
   font-weight: normal;
   font-family: Raleway-Regular, sans-serif;
+  --mainbackground: #1a1a1a;
+  /*--mainbackground: rgba(209,243,255,1);*/
+  --floodlight: #e0d692;
+  /*--floodlight: rgba(255,209,220,.8);*/
+  --buildingwrapper: white;
+  /*--buildingwrapper: rgba(255,209,220,1);*/
+  --color1: white;
+  /*--color1: black;*/
+  --color2: rgba(53, 95, 191,1);
+  /*--color2: rgba(255,209,220,.8);*/
+  --color2light: rgba(53, 95, 191,.8);
+  /*--color2light: rgba(255,209,220,.6);*/
+  --color2dark: rgba(53, 95, 191,1);
+  /*--color2dark: rgba(255,209,220,1);*/
+  --color3: black;
+  /*--color3: black;*/
+  --socialtext: white;
+  /*--socialtext: white;*/
   --black: #1a1a1a;
+}
+
+* {
+  transition-duration: 1s;
 }
 
 body {
   margin: 0;
-  background-color: var(--black);
+  background-color: var(--mainbackground);
 }
 
 header {
@@ -72,7 +94,7 @@ header {
 }
 
 .menu-button {
-  background-color: #355FBF;
+  background-color: var(--color2);
   border: none;
   display: flex;
   align-items: center;
@@ -80,18 +102,18 @@ header {
   border-radius: 1000px;
   cursor: pointer;
   transition: background-color 0.2s;
-  border: 4px solid var(--black);
+  border: 4px solid var(--mainbackground);
   width: 60px;
   height: 60px;
 }
 
 .menu-button:hover {
-  background-color: #3056ad;
+  background-color: var(--color2light);
 }
 
 .menu-button:focus {
   outline: none;
-  background-color: #264488;
+  background-color: var(--color2dark);
 }
 
 .menu-button-bar-container {
@@ -103,7 +125,7 @@ header {
 .menu-button-bar-container span {
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: var(--socialtext);
   position: absolute;
   left: 0;
   border-radius: 1000px;
@@ -151,9 +173,9 @@ header {
   justify-content: center;
   align-items: center;
   margin-left: 24px;
-  background-color: white;
+  background-color: var(--socialtext);
   outline: none;
-  border: 4px solid var(--black);
+  border: 4px solid var(--mainbackground);
 }
 
 .social-links a:hover svg {
@@ -167,7 +189,7 @@ header {
 .social-links a svg {
   width: 100%;
   height: 100%;
-  fill: #355FBF;
+  fill: var(--color2);
   transform: scale(1.25);
   transition: fill 0.2s;
 }
@@ -178,9 +200,9 @@ header {
 
 .tooltip {
   position: absolute;
-  color: white;
+  color: var(--socialtext);
   padding: 4px 8px;
-  background-color: #355FBF;
+  background-color: var(--color2);
   font-size: 0.8rem;
   border-radius: 4px;
   transform: scale(0) translateY(32px);
@@ -200,7 +222,7 @@ header {
 .tooltip::after {
   content: "";
   position: absolute;
-  background-color: #355FBF;
+  background-color: var(--color2);
   width: 8px;
   height: 8px;
   transform: rotate(45deg);
@@ -208,7 +230,7 @@ header {
 }
 
 .name-link {
-  color: white;
+  color: var(--color1);
   text-decoration: none;
   font-family: Raleway-Bold;
   font-size: 1rem;
@@ -222,7 +244,7 @@ header {
   top: 0;
   z-index: -1;
   transform: translateY(-120vh);
-  background-color: var(--black);
+  background-color: var(--mainbackground);
   transition: transform 0.5s ease-out;
 }
 
@@ -238,7 +260,7 @@ header {
 }
 
 .fs-menu nav a {
-  color: white;
+  color: var(--color1);
   font-size: 4rem;
   text-decoration: none;
   font-family: Raleway-ExtraLight;
@@ -259,15 +281,15 @@ footer {
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-color: #212e4b;
+  background-color: var(--floodlight);
   margin-top: 0;
   padding: 32px 0;
-  color: white;
+  color: var(--color1);
   font-family: Raleway-Regular;
 }
 
 footer a {
-  color: white;
+  color: var(--color1);
   text-decoration: none;
   margin-left: 4px;
   font-family: Raleway-Bold;
@@ -282,7 +304,7 @@ footer a::after {
   left: 0;
   bottom: -2px;
   height: 2px;
-  background-color: white;
+  background-color: var(--color1);
   content: "";
   z-index: -1;
   transition: transform 0.2s;
@@ -290,7 +312,7 @@ footer a::after {
 }
 
 footer a:hover {
-  color: #355FBF;
+  color: var(--color2);
 }
 
 footer a:hover::after {

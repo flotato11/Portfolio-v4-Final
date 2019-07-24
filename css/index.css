@@ -10,7 +10,7 @@
 
 .landing-text h1 {
   font-family: Catamaran-Black;
-  color: var(--black);
+  color: var(--mainbackground);
   font-size: 4.5rem;
   position: relative;
   margin: 0;
@@ -18,7 +18,7 @@
 
 .landing-text h1:after {
   content: "ALEX YAN";
-  color: white;
+  color: var(--color1);
   position: absolute;
   left: -4px;
   bottom: -4px;
@@ -26,7 +26,7 @@
 }
 
 .landing-text h2 {
-  color: var(--black);
+  color: var(--mainbackground);
   font-family: Raleway-Bold;
   margin: 0;
   transform: translateY(-24px);
@@ -45,17 +45,17 @@
 }
 
 .background-shape .cls-1 {
-  fill: #FBE791;
+  fill: var(--floodlight);
 }
 
 .background-shape svg {
   height: 100%;
-  fill: #FBE791;
+  fill: var(--floodlight);
 }
 
 .resume-section {
   position: relative;
-  background-color: var(--black);
+  background-color: var(--mainbackground);
   width: 100vw;
   padding-bottom: 88px;
 }
@@ -70,7 +70,7 @@
 }
 
 .buildings-wrapper svg {
-  stroke: white;
+  stroke: var(--buildingwrapper);
   stroke-width: 3;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .resume-name-shadow {
-  color: white;
+  color: var(--color1);
   opacity: 0.3;
   font-family: Catamaran-Black;
   font-size: 8rem;
@@ -94,11 +94,11 @@
 
 .resume-content {
   margin: 0 88px;
-  color: white;
+  color: var(--color1);
 }
 
 .resume-content h2 {
-  color: white;
+  color: var(--color1);
   font-family: Raleway-Black;
   letter-spacing: 8px;
   font-size: 6rem;
@@ -130,7 +130,7 @@ p.resume-description {
   font-size: 3rem;
   font-weight: normal;
   font-family: Raleway-Light;
-  border-bottom: 2px #355FBF solid;
+  border-bottom: 2px var(--color2) solid;
   padding-bottom: 4px;
 }
 
@@ -147,7 +147,7 @@ p.resume-description {
   margin-bottom: 16px;
   font-size: 1.7rem;
   transform: translate(2px, -15px);
-  color: #355FBF;
+  color: var(--color2);
 }
 
 .resume-subcategory h6 {
@@ -155,7 +155,7 @@ p.resume-description {
   margin-bottom: 16px;
   font-size: 1.1rem;
   transform: translate(2px, -25px);
-  color: white;
+  color: var(--color1);
 }
 
 .resume-subcategory p {
@@ -195,6 +195,7 @@ p.resume-description {
 
   .floodlight {
     transform: translateX(-60px);
+    background-color: ;
   }
 
   .resume-content h2 {
